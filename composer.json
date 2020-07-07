@@ -1,6 +1,6 @@
 {
-  "name": "drw-framework/drw-framework",
-  "description": "drw framework (Don't Re-invent the Wheel is a PHP framework that closely mimic the RoR framework)",
+  "name": "drw/php-form",
+  "description": "This form is use to generate HTML form using PHP",
   "license": "MIT",
   "homepage": "https://github.com/gbengawale/php-form",
   "keywords": ["web", "php", "form", "form-generator", "php-form-generator", "html-form", "form-library"],
