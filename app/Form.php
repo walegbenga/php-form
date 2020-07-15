@@ -165,46 +165,4 @@ EOT;
         </script>
 EOT;
     }
-
-    /*public function PasswordDidChange(id, username) {
-        $('#password-strength'). html(passwordStrength($('#' + id).val(), username));
-    }
-
-    function setCookie(name, value, expires, path, domain, secure) {
-        let today = new Date();
-        today.setTime(today.getTime());
-        if (expires)
-            expires = expires * 1000 * 60 * 60 * 24;
-        let date = new Date(today.getTime() + (expires));
-        document.cookie = name + '=' + escape(value) + ((expires) ? ';expires=' + date.toGMTString() : '') +
-        ((path) ? ';path=' + path : '') + ((domain) ? ';domain=' + domain : '') + ((secure) ? ';secure' : '');
-    }
-
-    function browser_signature(url, params) {
-var div = document.createElement('div');
-div.setAttribute('id', 'inch');
-div.setAttribute('style',
-'width:1in;height:1in;position:absolute');
-var t = document.createTextNode(' '); // might be needed
-div.appendChild(t);
-document.body.appendChild(div);
-var x = navigator.userAgent + '-';
-x += document.getElementById("inch").offsetWidth + '-' +
-document.getElementById("inch").offsetWidth;
-if (typeof(screen.width) == "number")
-x += '-' + screen.width;
-if (typeof(screen.height) == "number")
-x += '-' + screen.height;
-if (typeof(screen.availWidth) == "number")
-x += '-' + screen.availWidth;
-if (typeof(screen.availHeight) == "number")
-x += '-' + screen.availHeight;
-if (typeof(screen.pixelDepth) == "number")
-x += '-' + screen.pixelDepth;
-if (typeof(screen.colorDepth) == "number")
-x += '-' + screen.colorDepth;
-params['browser'] = x;
-transfer(url, params);
-}
-*/
 }
