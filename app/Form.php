@@ -53,14 +53,16 @@ class Form
         }
         $this->label($fld, $label, $break);
         
-        $v = isset($this->vals[$fld]) ? htmlspecial($this->vals[$fld]) : '';
+        //$v = isset($this->vals[$fld]) ? htmlspecial($this->vals[$fld]) : '';
+        $v = htmlspecial($this->vals[$fld]) ?? '';
         echo "<input id=$fld type=$type size=$len name=$fld value='$v' placeholder='$placeholder'>";
     }
     
     public function textarea($fld, $label = null, $cols = 100, $rows = 5, $readonly = false)
     {
         $this->label($fld, $label, true);
-        $v = isset($this->vals[$fld]) ? htmlspecial($this->vals[$fld]) : '';
+        //$v = isset($this->vals[$fld]) ? htmlspecial($this->vals[$fld]) : '';
+        $v = htmlspecial($this->vals[$fld]) ?? '';
         echo "<br><textarea id=$fld name=$fld cols=$cols rows=$rows>$v</textarea>";
     }
 
@@ -97,7 +99,8 @@ class Form
         $this->hidden($fldfk, $vfk);
         $fld = "{$fldfk}_label";
         $this->label($fld, $label, true);
-        $v = isset($this->vals[$fldvis]) ? htmlspecial($this->vals[$fldvis]) : '';
+        //$v = isset($this->vals[$fldvis]) ? htmlspecial($this->vals[$fldvis]) : '';
+        $v = htmlspecial($this->vals[$fldvis]) ?? '';
         echo "<input id=$fld type=text size=$len name=$fld value='$v' readonly>";
         echo "<button class=button type=button onclick='ChooseSpecialty(\"$fldfk\");'>Choose...</button>";
         echo "<button class=button type=button onclick='ClearField(\"$fldfk\");'>Clear</button>";
