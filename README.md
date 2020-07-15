@@ -1,5 +1,6 @@
 As a web programmer, you know form is an integral part of the web(infact, the web engine, almost all we do is based on form). Now, to create a complete form that is not easily hackable, you need to include `csrftoken`, escaping to prevent `XXS attacks`, and the potential complications of handling `one-to-many relationships` they’re really too tedious to code from scratch every time, and, if you forget the csrftoken or a call to htmlspecialchars, you have a security hole. So, I created this `Form plugin` that has methods for many of the elements that a form can contain, and you can easily add additional methods as needed.
 
+*Usage*
 **Installing the plug-in**
 You can install the plug-in in two ways through
 1. composer `composer require drw/php-form`(recommended)
